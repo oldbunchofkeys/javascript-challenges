@@ -70,6 +70,12 @@ console.log(nums.filter(num => num % 2 === 0));
 console.log(nums.reduce((num, sum) => num + sum));
 //this one below doesn't quite work... it doesn't display the "sheep" after '4'.
 console.log(nums.reduce((num, string) => num.toString() +" sheep, " + string  ));
+
+//aaron's solution
+var sheep = nums.reduce(function(string, num) {
+  return string + num + " sheep, " ;
+}, '');
+console.log(sheep.slice(0, -2));
 /*
     HIGHER ORDER CHAINING
 
