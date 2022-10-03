@@ -15,8 +15,5 @@ function reverse(str){
       returnWords.push(words[i]);
     }
   }
-  if (str === ',') {
-    return '';
-  }
   return returnWords.join().replace(/,/g, ' ').replace(/  /, ', ')
 }
